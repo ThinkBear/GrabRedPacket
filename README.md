@@ -6,15 +6,14 @@
 [点击下载APK安装包](http://pan.baidu.com/s/1kVjnfNp)
 <br>
 
-## ImageSample
+## 图片示例
 
 ![image](https://github.com/ThinkBear/GrabRedPacket/blob/master/app/src/main/res/mipmap-xhdpi/logo.png)
 ![image](https://github.com/ThinkBear/GrabRedPacket/blob/master/.image/1.jpg)
 ![image](https://github.com/ThinkBear/GrabRedPacket/blob/master/.image/2.jpg)
 
-## Author
+## 关于
 
-Created by [ThinkBear](https://github.com/ThinkBear) 
+作者：[ThinkBear](https://github.com/ThinkBear) 
 <br>
-<br>
-Email：[787594505@qq.com](mailto:787594505@qq.com)
+邮箱：[787594505@qq.com](mailto:787594505@qq.com)
