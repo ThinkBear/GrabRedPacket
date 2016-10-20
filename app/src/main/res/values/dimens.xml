@@ -1,0 +1,26 @@
+<resources>
+
+    <dimen name="title_height">46dp</dimen>
+
+    <!-- 界面字体大小 -->
+    <dimen name="font_size_a">13sp</dimen>
+    <dimen name="font_size_b">14sp</dimen>
+    <dimen name="font_size_c">15sp</dimen>
+    <dimen name="font_size_d">17sp</dimen>
+    <dimen name="font_size_e">19sp</dimen>
+    <dimen name="font_size_f">22sp</dimen>
+    <dimen name="font_size_g">25sp</dimen>
+
+    <dimen name="ico_small_size">30dp</dimen>
+    <dimen name="ico_among_size">33dp</dimen>
+    <dimen name="ico_big_size">47dp</dimen>
+    <dimen name="ico_xbig_size">66dp</dimen>
+
+    <!-- 间距大小 -->
+    <dimen name="space_small">3dp</dimen>
+    <dimen name="space_among">5dp</dimen>
+    <dimen name="space_big">7dp</dimen>
+    <dimen name="space_xbig">10dp</dimen>
+    <dimen name="space_xxbig">15dp</dimen>
+
+</resources>

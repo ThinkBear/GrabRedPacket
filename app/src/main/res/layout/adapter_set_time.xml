@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/space_big">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/space_among"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/start"
+            style="@style/smallTitleTheme"
+            android:layout_width="wrap_content"
+            android:background="@drawable/bg_black11_corners"
+            android:padding="@dimen/space_among"
+            android:text="21215"
+            />
+
+        <TextView
+            style="@style/smallTitleTheme"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/space_big"
+            android:layout_marginRight="@dimen/space_big"
+            android:text="~"/>
+
+        <TextView
+            android:id="@+id/end"
+            style="@style/smallTitleTheme"
+            android:layout_width="wrap_content"
+            android:background="@drawable/bg_black11_corners"
+            android:padding="@dimen/space_among"
+            android:text="215"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="@dimen/ico_among_size"
+        android:layout_height="@dimen/ico_among_size"
+        android:src="@mipmap/delete"
+        android:background="@drawable/pressed_bg"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBG"
+    android:orientation="vertical">
+
+    <include layout="@layout/widget_activitybar" />
+
+    <cn.thinkbear.app.grabredpacket.share.view.Widget_ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="@dimen/space_big">
+
+            <TextView
+                style="@style/bgSmallTitleTheme"
+                android:text="普通设置" />
+
+            <RelativeLayout
+                android:id="@+id/findPanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_xbig"
+                android:background="@drawable/pressed_white00_black11"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/smallTitleTheme"
+                        android:layout_width="wrap_content"
+                        android:text="@string/wx_find_title" />
+
+                    <TextView
+                        android:id="@+id/findOption"
+                        style="@style/smallHintTheme"
+                        android:layout_marginTop="@dimen/space_small" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/space_xxbig"
+                    android:layout_height="@dimen/space_xxbig"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/item_right" />
+
+            </RelativeLayout>
+
+            <View style="@style/linear_black55" />
+
+            <RelativeLayout
+                android:id="@+id/openPanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_xbig"
+                android:background="@drawable/pressed_white00_black11"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/smallTitleTheme"
+                        android:layout_width="wrap_content"
+                        android:text="@string/wx_open_title" />
+
+                    <TextView
+                        android:id="@+id/openOption"
+                        style="@style/smallHintTheme"
+                        android:layout_marginTop="@dimen/space_small" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/space_xxbig"
+                    android:layout_height="@dimen/space_xxbig"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/item_right" />
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                style="@style/bgSmallTitleTheme"
+                android:text="延迟设置(单位:毫秒,1000毫秒=1秒)" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="@dimen/space_big">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/black11"
+                    android:padding="@dimen/space_small"
+                    android:layout_marginRight="@dimen/space_big">
+
+                    <TextView
+                        style="@style/smallTitleTheme"
+                        android:layout_width="wrap_content"
+                        android:text="@string/wx_find_title"/>
+
+                    <TextView
+                        android:id="@+id/findDelay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/font_size_a"/>
+
+                </LinearLayout>
+                <SeekBar
+                    android:id="@+id/findSeek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+            <View style="@style/linear_black55" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="@dimen/space_big">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/black11"
+                    android:padding="@dimen/space_small"
+                    android:layout_marginRight="@dimen/space_big">
+
+                    <TextView
+                        style="@style/smallTitleTheme"
+                        android:layout_width="wrap_content"
+                        android:text="@string/wx_open_title"/>
+
+                    <TextView
+                        android:id="@+id/openDelay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/font_size_a" />
+
+                </LinearLayout>
+                <SeekBar
+                    android:id="@+id/openSeek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/bgSmallTitleTheme"
+                android:text="高级设置" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_among">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/space_big"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/smallTitleTheme"
+                        android:text="群过滤设置" />
+
+                    <TextView
+                        style="@style/smallHintTheme"
+                        android:layout_marginTop="@dimen/space_small"
+                        android:text="只抢指定群的红包" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/groupSet"
+                        android:layout_width="@dimen/ico_among_size"
+                        android:layout_height="@dimen/ico_among_size"
+                        android:src="@mipmap/set"
+                        android:background="@drawable/pressed_bg"/>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/space_big"
+                        android:layout_marginTop="@dimen/space_big"
+                        android:layout_marginBottom="@dimen/space_big"
+                        android:background="@color/black55" />
+
+                    <ImageView
+                        android:id="@+id/groupSwitch"
+                        android:layout_width="@dimen/ico_xbig_size"
+                        android:layout_height="@dimen/ico_among_size"
+                        android:src="@mipmap/close" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </cn.thinkbear.app.grabredpacket.share.view.Widget_ScrollView>
+=
+
+</LinearLayout>

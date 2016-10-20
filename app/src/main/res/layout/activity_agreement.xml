@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/titleTheme"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        >
+
+        <cn.thinkbear.app.grabredpacket.share.view.Widget_ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/mainBG"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/space_big">
+
+                <TextView
+                    style="@style/smallTitleTheme"
+                    android:textSize="@dimen/font_size_d"
+                    android:padding="@dimen/space_among"
+                    android:layout_margin="@dimen/space_among"
+                    android:text="@string/agreementTitle"
+                    />
+                <TextView
+                    style="@style/smallTitleTheme"
+                    android:textSize="@dimen/font_size_d"
+                    android:padding="@dimen/space_among"
+                    android:layout_margin="@dimen/space_among"
+                    android:text="@string/author"
+                    />
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_c"
+                    android:textColor="@color/blackbb"
+                    android:padding="@dimen/space_big"
+                    android:lineSpacingExtra="@dimen/space_among"
+                    />
+            </LinearLayout>
+
+        </cn.thinkbear.app.grabredpacket.share.view.Widget_ScrollView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/space_small">
+
+        <TextView
+            android:id="@+id/no"
+            style="@style/smallTitleTheme"
+            android:textColor="@color/black88"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/space_xbig"
+            android:text="不同意"
+            android:background="@drawable/pressed_white_black11"
+            />
+        <TextView
+            android:id="@+id/yes"
+            style="@style/smallTitleTheme"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/space_xbig"
+            android:text="同意"
+            android:background="@drawable/pressed_white_black11"
+            android:layout_alignParentRight="true"
+            />
+
+
+    </RelativeLayout>
+</LinearLayout>

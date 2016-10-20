@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="mainBG">#faf7f7</color>
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+    <!-- 透明黑色 -->
+
+    <color name="black11">#11000000</color>
+    <color name="black22">#22000000</color>
+    <color name="black33">#33000000</color>
+    <color name="black55">#55000000</color>
+    <color name="black88">#88000000</color>
+    <color name="blackbb">#bb000000</color>
+    <color name="blackdd">#dd000000</color>
+    <color name="gray">#999999</color>
+
+    <!-- 白色 -->
+    <color name="white">#FFFFFF</color>
+    <!-- 透明 -->
+    <color name="white00">#00FFFFFF</color>
+    <!-- 透明白色 -->
+    <color name="white33">#33FFFFFF</color>
+    <color name="white55">#55FFFFFF</color>
+    <color name="white88">#88FFFFFF</color>
+    <color name="whitebb">#bbFFFFFF</color>
+    <color name="whiteee">#eeFFFFFF</color>
+
+
+    <color name="blue">#0000FF</color>
+    <color name="gold">#FFD700</color>
+    <color name="orange">#FFA500</color>
+
+</resources>

@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">小熊抢红包</string>
+    <string name="author">作者：ThinkBear</string>
+    <string name="config_file">config</string>
+    <string name="service_description">抢红包辅助功能\n\n-支持微信红包\n-支持QQ红包</string>
+
+    <string name="openASTips">找到[小熊抢红包]服务，开启服务即可</string>
+    <string name="closeASTips">找到[小熊抢红包]服务，关闭服务即可</string>
+
+    <string name="wx_set_title">微信平台设置</string>
+    <string name="qq_set_title">QQ平台设置</string>
+
+
+    <string name="wx_find_title">发现红包后</string>
+    <string name="wx_find_0">自动打开红包</string>
+    <string name="wx_find_1">只打开单聊红包，群聊红包只通知</string>
+    <string name="wx_find_2">只打开群聊红包，单聊红包只通知</string>
+    <string name="wx_find_3">只通知，手动打开</string>
+
+    <string name="wx_open_title">打开红包后</string>
+    <string name="wx_open_0">拆红包</string>
+    <string name="wx_open_1">什么都不做</string>
+
+    <string name="wx_grab_title">抢到红包后</string>
+
+    <string name="wx_grab_0">关闭页面</string>
+    <string name="wx_grab_1">关闭页面并回到桌面</string>
+    <string name="wx_grab_2">什么都不做</string>
+
+    <string name="qq_find_title">发现红包后</string>
+    <string name="qq_find_0">自动打开红包</string>
+    <string name="qq_find_1">只打开单聊红包，群聊红包只通知</string>
+    <string name="qq_find_2">只打开群聊红包，单聊红包只通知</string>
+    <string name="qq_find_3">只通知，手动打开</string>
+
+    <string name="qq_open_title">打开红包后</string>
+    <string name="qq_open_0">什么都不做</string>
+    <string name="qq_open_1">关闭页面</string>
+    <string name="qq_open_2">关闭页面并回到桌面</string>
+    <string name="qq_open_3">查看领取详情</string>
+
+    <string name="setTimeTitle">时段设置</string>
+    <string name="startTimeTitle">设置开始时间</string>
+    <string name="endTimeTitle">设置结束时间</string>
+
+    <string name="setGroupTitle">群过滤设置</string>
+    <string name="versionCheck">版本更新</string>
+    <string name="agreementTitle">免责声明</string>
+    <string name="agreementContent">本软件免费提供抢红包辅助功能，包括微信端、QQ端，完全模拟人工操作，抢红包速度取决于你手机的性能与网络，不涉及任何第三方软件接口，无病毒、不收集用户隐私信息，禁止使用本软件参与赌博活动。一切因使用“%1$s”造成的任何后果，“%1$s”概不负责，亦不承担任何法律责任!</string>
+
+    <string name="copyRight">©%1$s ThinkBear</string>
+
+    <string name="useTitle">用户须知</string>
+
+    <string name="use_1">手机装有360、QQ管家等管理软件，建议在手机加速项中，将“%1$s”添加到白名单中，否则应用被关闭后，功能将失效。</string>
+    <string name="use_2">QQ、微信需开启新消息提醒功能，即通知栏显示消息，“%1$s”通过对通知栏消息的监听，实现快速抢红包功能。</string>
+    <string name="use_3">由于长时间没有使用，可能出现应用被系统销毁关闭，请重新打开“%1$s”，重新设置即可。</string>
+    <string name="use_4">在低版本的微信和QQ上，“%1$s”的抢红包功能可能失效，建议升级微信和QQ版本</string>
+</resources>

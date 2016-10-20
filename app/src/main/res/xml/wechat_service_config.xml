@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--flagIncludeNotImportantViews-->
+<accessibility-service
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/service_description"
+    android:accessibilityEventTypes="typeNotificationStateChanged|typeWindowStateChanged|typeWindowContentChanged"
+    android:packageNames="com.tencent.mm,com.tencent.mobileqq"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:notificationTimeout="100"
+    android:accessibilityFlags="flagIncludeNotImportantViews"
+    android:canRetrieveWindowContent="true"
+    android:settingsActivity="cn.thinkbear.app.grabredpacket.main.start.Activity_Agreement" />

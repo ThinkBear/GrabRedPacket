@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBG">
+
+    <include layout="@layout/widget_activitybar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/space_big">
+
+        <TextView
+            style="@style/bgSmallTitleTheme"
+            android:text="添加时间段" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_big"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/startTimePanel"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/pressed_white00_black11"
+                android:orientation="vertical"
+                android:padding="@dimen/space_among">
+                <TextView
+                    style="@style/smallTitleTheme"
+                    android:text="开始时间"
+                    />
+                <TextView
+                    android:id="@+id/startTime"
+                    style="@style/smallHintTheme"
+                    android:layout_marginTop="@dimen/space_among"
+                    android:text="08:20"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/black55"
+                android:layout_margin="@dimen/space_big"/>
+
+            <LinearLayout
+                android:id="@+id/endTimePanel"
+                android:layout_width="0px"
+                android:background="@drawable/pressed_white00_black11"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="@dimen/space_among">
+
+                <TextView
+                    style="@style/smallTitleTheme"
+                    android:text="结束时间"
+                    />
+                <TextView
+                    android:id="@+id/endTime"
+                    style="@style/smallHintTheme"
+                    android:layout_marginTop="@dimen/space_among"
+                    android:text="08:20"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/black55"
+                android:layout_margin="@dimen/space_big"/>
+
+            <TextView
+                android:id="@+id/addTime"
+                style="@style/smallTitleTheme"
+                android:layout_width="wrap_content"
+                android:padding="@dimen/space_big"
+                android:layout_margin="@dimen/space_among"
+                android:background="@drawable/pressed_bg"
+                android:text="添加"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/bgSmallTitleTheme"
+            android:text="已添加时间段" />
+
+        <ListView
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/black55"
+            android:dividerHeight="1px"
+            android:padding="@dimen/space_big"
+            android:listSelector="@color/white00"
+            >
+
+
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

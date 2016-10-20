@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBG"
+    android:orientation="vertical"
+    tools:context=".ui.Activity_Main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/titleTheme"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_among"
+        android:background="@drawable/bg_shadow" />
+
+    <cn.thinkbear.app.grabredpacket.share.view.Widget_ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/space_big">
+
+            <TextView
+                style="@style/bgSmallTitleTheme"
+                android:text="打开服务" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_among">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_big"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/smallTitleTheme"
+                        android:layout_width="wrap_content"
+                        android:text="辅助服务" />
+
+                    <TextView
+                        style="@style/smallHintTheme"
+                        android:layout_marginTop="@dimen/space_small"
+                        android:text="抢红包功能需开启此服务" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/asSwitch"
+                    android:layout_width="@dimen/ico_xbig_size"
+                    android:layout_height="@dimen/ico_among_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/close" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                style="@style/bgSmallTitleTheme"
+                android:text="开启抢红包平台" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_among">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/ico_among_size"
+                        android:layout_height="@dimen/ico_among_size"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/space_big"
+                        android:src="@mipmap/ico_wechat" />
+
+                    <TextView
+                        android:id="@+id/wxVN"
+                        style="@style/smallTitleTheme"
+                        android:padding="@dimen/space_big" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/wechatSet"
+                        android:layout_width="@dimen/ico_among_size"
+                        android:layout_height="@dimen/ico_among_size"
+                        android:background="@drawable/pressed_bg"
+                        android:src="@mipmap/set" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/space_big"
+                        android:layout_marginLeft="@dimen/space_big"
+                        android:layout_marginTop="@dimen/space_big"
+                        android:background="@color/black55" />
+
+                    <ImageView
+                        android:id="@+id/wechatSwitch"
+                        android:layout_width="@dimen/ico_xbig_size"
+                        android:layout_height="@dimen/ico_among_size"
+                        android:src="@mipmap/close" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View style="@style/linear_black55" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_among">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/ico_among_size"
+                        android:layout_height="@dimen/ico_among_size"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/space_big"
+                        android:src="@mipmap/ico_qq" />
+
+                    <TextView
+                        android:id="@+id/qqVN"
+                        style="@style/smallTitleTheme"
+                        android:padding="@dimen/space_big" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/qqSet"
+                        android:layout_width="@dimen/ico_among_size"
+                        android:layout_height="@dimen/ico_among_size"
+                        android:background="@drawable/pressed_bg"
+                        android:src="@mipmap/set" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/space_big"
+                        android:layout_marginLeft="@dimen/space_big"
+                        android:layout_marginTop="@dimen/space_big"
+                        android:background="@color/black55" />
+
+                    <ImageView
+                        android:id="@+id/qqSwitch"
+                        android:layout_width="@dimen/ico_xbig_size"
+                        android:layout_height="@dimen/ico_among_size"
+                        android:src="@mipmap/close" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/bgSmallTitleTheme"
+                android:text="通用设置" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_among">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_big"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/smallTitleTheme"
+                        android:layout_width="wrap_content"
+                        android:text="锁屏黑屏下抢红包" />
+
+                    <TextView
+                        style="@style/smallHintTheme"
+                        android:layout_marginTop="@dimen/space_small"
+                        android:text="此功能需先移除锁屏密码" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/autoUnlock"
+                    android:layout_width="@dimen/ico_xbig_size"
+                    android:layout_height="@dimen/ico_among_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/close" />
+
+            </RelativeLayout>
+
+            <View style="@style/linear_black55" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_among">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    android:padding="@dimen/space_big">
+
+                    <TextView
+                        style="@style/smallTitleTheme"
+                        android:text="时段设置" />
+
+                    <TextView
+                        style="@style/smallHintTheme"
+                        android:layout_marginTop="@dimen/space_small"
+                        android:text="规定的时间内抢红包" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/timeSet"
+                        android:layout_width="@dimen/ico_among_size"
+                        android:layout_height="@dimen/ico_among_size"
+                        android:background="@drawable/pressed_bg"
+                        android:src="@mipmap/set" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/space_big"
+                        android:layout_marginLeft="@dimen/space_big"
+                        android:layout_marginTop="@dimen/space_big"
+                        android:background="@color/black55" />
+
+                    <ImageView
+                        android:id="@+id/timeSwitch"
+                        android:layout_width="@dimen/ico_xbig_size"
+                        android:layout_height="@dimen/ico_among_size"
+                        android:src="@mipmap/close" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/bgSmallTitleTheme"
+                android:text="其它" />
+
+            <TextView
+                android:id="@+id/use"
+                style="@style/smallTitleTheme"
+                android:background="@drawable/pressed_white00_black11"
+                android:padding="@dimen/space_xbig"
+                android:text="@string/useTitle"/>
+
+            <View style="@style/linear_black55" />
+
+            <TextView
+                android:id="@+id/agreement"
+                style="@style/smallTitleTheme"
+                android:background="@drawable/pressed_white00_black11"
+                android:padding="@dimen/space_xbig"
+                android:text="@string/agreementTitle"
+                android:layout_marginBottom="@dimen/space_among"/>
+
+
+        </LinearLayout>
+
+
+    </cn.thinkbear.app.grabredpacket.share.view.Widget_ScrollView>
+
+
+
+</LinearLayout>

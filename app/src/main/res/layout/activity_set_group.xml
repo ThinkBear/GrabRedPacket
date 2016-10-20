@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBG">
+
+    <include layout="@layout/widget_activitybar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="@dimen/space_big">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/space_big">
+
+            <EditText
+                android:id="@+id/groupName"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:padding="@dimen/space_big"
+                android:background="@drawable/pressed_edit"
+                android:hint="输入完整的群名称"
+                android:textColor="@color/blackbb"
+                android:textSize="@dimen/font_size_d"
+                />
+
+            <TextView
+                android:id="@+id/addGroup"
+                style="@style/smallTitleTheme"
+                android:layout_width="wrap_content"
+                android:padding="@dimen/space_big"
+                android:layout_marginLeft="@dimen/space_big"
+                android:background="@drawable/pressed_bg"
+                android:text="添加"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/bgSmallTitleTheme"
+            android:text="已添加的群" />
+
+        <RadioGroup
+            android:id="@+id/optionGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/optionA"
+            android:layout_marginTop="@dimen/space_among"
+            android:background="@drawable/bg_black11_corners">
+
+            <RadioButton
+                android:id="@+id/optionA"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/blackbb"
+                android:textSize="@dimen/font_size_c"
+                android:text="设为要抢的群"/>
+            <RadioButton
+                android:id="@+id/optionB"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/blackbb"
+                android:textSize="@dimen/font_size_c"
+                android:text="设为不抢的群"/>
+
+        </RadioGroup>
+
+
+        <ListView
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/black55"
+            android:dividerHeight="1px"
+            android:padding="@dimen/space_big"
+            android:listSelector="@color/white00"
+            >
+
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

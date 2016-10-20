@@ -1,0 +1,83 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/in_from_left</item>
+        <item name="android:activityOpenExitAnimation">@anim/out_to_right</item>
+        <item name="android:activityCloseEnterAnimation">@anim/in_from_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/out_to_left</item>
+    </style>
+
+
+    <style name="BaseTheme1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="BaseTheme2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="BaseTheme3">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+
+
+    <style name="titleTheme" parent="BaseTheme2">
+        <item name="android:textSize">@dimen/font_size_e</item>
+        <item name="android:textColor">@color/blackdd</item>
+    </style>
+
+    <style name="linear_black55" parent="BaseTheme3">
+        <item name="android:background">@color/black55</item>
+    </style>
+
+    <style name="smallTitleTheme" parent="BaseTheme1">
+        <item name="android:textSize">@dimen/font_size_c</item>
+        <item name="android:textColor">@color/blackdd</item>
+    </style>
+
+    <style name="smallHintTheme" parent="BaseTheme2">
+        <item name="android:textSize">@dimen/font_size_a</item>
+        <item name="android:textColor">@color/black88</item>
+
+    </style>
+
+    <style name="bgSmallTitleTheme" parent="smallTitleTheme">
+        <item name="android:background">@color/black33</item>
+        <item name="android:padding">@dimen/space_big</item>
+
+    </style>
+
+    <style name="editTheme">
+        <item name="android:layout_width">@dimen/ico_xbig_size</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_size_d</item>
+        <item name="android:padding">@dimen/space_among</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/blackdd</item>
+        <item name="android:background">@drawable/pressed_edit</item>
+    </style>
+
+
+    <style name="popup_anim_style_a">
+        <item name="android:windowEnterAnimation">@anim/popup_enter_a</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit_a</item>
+    </style>
+
+    <style name="popup_anim_style_b">
+        <item name="android:windowEnterAnimation">@anim/popup_enter_b</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit_b</item>
+    </style>
+
+    <style name="popup_anim_style_c">
+        <item name="android:windowEnterAnimation">@anim/popup_enter_c</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit_c</item>
+    </style>
+</resources>
